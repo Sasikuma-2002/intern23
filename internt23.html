@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input type=button value='Show Date' onclick="show_date();">
+<div id=display2></div>
+<script type="text/javascript"> 
+function show_date() { 
+var in_date = new Date();
+var str=in_date.getDate() +'/'+(in_date.getMonth()+1)+'/'+in_date.getFullYear()
+document.getElementById('display2').innerHTML=str
+}
+</script><br/>
+<div>
+
+<button type="button"
+onclick="document.getElementById('date_time_button').innerHTML = Date()">
+Show Time.</button>
+</div>
+<p id="date_time_button"></p>
+
+</body>
+</html>
